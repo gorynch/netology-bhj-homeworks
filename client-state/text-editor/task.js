@@ -1,6 +1,4 @@
-if (localStorage.getItem('textArea') != '') {
-    document.getElementById('editor').value = localStorage.getItem('textArea');
-}
+document.getElementById('editor').value = localStorage.getItem('textArea');
 
 document.getElementById('editor').addEventListener('input', () => {
     localStorage.setItem('textArea', document.getElementById('editor').value);
